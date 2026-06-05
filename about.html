@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - ICoder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">I<span>Coder</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Topics</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#blog-section">Technology</a></li>
+                            <li><a class="dropdown-item" href="index.html#blog-section">Web Development</a></li>
+                            <li><a class="dropdown-item" href="index.html#blog-section">Python</a></li>
+                            <li><a class="dropdown-item" href="index.html#blog-section">Design</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="contact.html">Support</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Write for Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex gap-2">
+                    <button class="btn btn-nav-login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-nav-signup" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                        Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About ICoder</h1>
+            <p class="lead mt-3">Empowering the next generation of developers since 2024</p>
+            <a href="contact.html" class="btn btn-light btn-lg mt-3 hero-btn">Work With Us</a>
+        </div>
+    </section>
+
+    <!-- Featurettes -->
+    <div class="container my-5">
+        <div class="row featurette align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">It All Started With an Idea. <span class="text-muted">It'll blow your
+                        mind.</span></h2>
+                <p class="lead">ICoder was born from a simple vision: make quality programming education accessible to
+                    everyone. What started as a small blog has grown into a thriving community of 50,000+ developers
+                    learning and sharing knowledge every day.</p>
+                <a href="index.html#blog-section" class="btn btn-primary">Explore Articles</a>
+            </div>
+            <div class="col-md-5">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538a43f?w=500&h=400&fit=crop"
+                    class="img-fluid" alt="Developer coding">
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">We Started ICoder in 2024. <span class="text-muted">See for
+                        yourself.</span></h2>
+                <p class="lead">In just one year, we've published over 500 tutorials covering web development, Python,
+                    data science, UI/UX design, and more. Our content is written by industry professionals and updated
+                    regularly to keep pace with the fast-moving tech world.</p>
+                <a href="index.html" class="btn btn-success">Visit Homepage</a>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&h=400&fit=crop"
+                    class="img-fluid" alt="Team working together">
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row featurette align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Built for Learners. <span class="text-muted">By developers.</span></h2>
+                <p class="lead">Whether you're preparing for an internship, switching careers, or leveling up your
+                    skills, ICoder provides structured learning paths, real-world projects, and a supportive community
+                    to help you succeed in tech.</p>
+                <a href="contact.html" class="btn btn-danger">Join Our Team</a>
+            </div>
+            <div class="col-md-5">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&h=400&fit=crop"
+                    class="img-fluid" alt="Learning programming">
+            </div>
+        </div>
+    </div>
+
+    <!-- Culture Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Life at ICoder</h2>
+                <p class="section-subtitle">A glimpse into our culture, events and learning environment</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-card" data-gallery data-gallery-title="Modern Office"
+                        data-gallery-desc="Our open-plan office designed for creativity and collaboration.">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&h=300&fit=crop"
+                            alt="Modern office">
+                        <div class="gallery-overlay">
+                            <h6>Our Office</h6>
+                            <p>Modern workspace</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-card" data-gallery data-gallery-title="Workshop Day"
+                        data-gallery-desc="Hands-on workshops where students build real applications.">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=300&fit=crop"
+                            alt="Workshop day">
+                        <div class="gallery-overlay">
+                            <h6>Workshops</h6>
+                            <p>Hands-on learning</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-card" data-gallery data-gallery-title="Graduation Ceremony"
+                        data-gallery-desc="Celebrating students who completed our certification programs.">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=300&fit=crop"
+                            alt="Graduation ceremony">
+                        <div class="gallery-overlay">
+                            <h6>Graduation</h6>
+                            <p>Certification day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-card" data-gallery data-gallery-title="Friday Demo Day"
+                        data-gallery-desc="Every Friday teams demo their weekly progress to the whole company.">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=300&fit=crop"
+                            alt="Demo day">
+                        <div class="gallery-overlay">
+                            <h6>Demo Day</h6>
+                            <p>Every Friday</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-card" data-gallery data-gallery-title="Coffee & Code"
+                        data-gallery-desc="Informal coding sessions over coffee — where great ideas are born.">
+                        <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&h=300&fit=crop"
+                            alt="Coffee and code">
+                        <div class="gallery-overlay">
+                            <h6>Coffee &amp; Code</h6>
+                            <p>Creative sessions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-card" data-gallery data-gallery-title="Global Meetup"
+                        data-gallery-desc="Connecting with developers from 20+ countries through virtual meetups.">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=300&fit=crop"
+                            alt="Global meetup">
+                        <div class="gallery-overlay">
+                            <h6>Global Meetup</h6>
+                            <p>20+ countries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Meet Our Team</h2>
+            <p class="section-subtitle">Passionate developers building the future of tech education</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4 col-sm-6">
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop"
+                        class="team-avatar" alt="Rahul Sharma">
+                    <h5>Rahul Sharma</h5>
+                    <p class="text-muted">Founder &amp; Lead Developer</p>
+                    <p class="small">Full stack developer with 8+ years of experience in web technologies.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop"
+                        class="team-avatar" alt="Priya Patel">
+                    <h5>Priya Patel</h5>
+                    <p class="text-muted">Content Director</p>
+                    <p class="small">Creates engaging tutorials on Python, data science, and machine learning.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop"
+                        class="team-avatar" alt="Amit Kumar">
+                    <h5>Amit Kumar</h5>
+                    <p class="text-muted">UI/UX Designer</p>
+                    <p class="small">Designs beautiful interfaces and ensures great user experiences.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop"
+                        class="team-avatar" alt="Sneha Gupta">
+                    <h5>Sneha Gupta</h5>
+                    <p class="text-muted">Community Manager</p>
+                    <p class="small">Builds and nurtures our global developer community of 50,000+ members.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop"
+                        class="team-avatar" alt="Vikram Singh">
+                    <h5>Vikram Singh</h5>
+                    <p class="text-muted">DevOps Engineer</p>
+                    <p class="small">Manages cloud infrastructure and CI/CD pipelines for seamless deployments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="stats-section">
+        <div class="container text-center">
+            <h2 class="mb-3">Stay Updated</h2>
+            <p class="mb-4">Subscribe to our newsletter for the latest tutorials and tech news.</p>
+            <form class="row g-2 justify-content-center" id="newsletterForm" style="max-width: 500px; margin: 0 auto;">
+                <div class="col-sm-8">
+                    <input type="email" class="form-control form-control-lg" id="newsletterEmail"
+                        placeholder="Enter your email" required>
+                </div>
+                <div class="col-sm-4">
+                    <button type="submit" class="btn btn-light btn-lg w-100">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="footer-brand mb-2">I<span>Coder</span></div>
+                    <p>Your go-to platform for programming tutorials, tech news, and developer resources.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="text-white mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="text-white mb-3">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" data-footer-modal="privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-footer-modal="terms">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <p class="mb-0">&copy; 2024–2025 ICoder, Inc. All rights reserved.</p>
+                <a href="#" class="back-to-top">Back to top &uarr;</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to ICoder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Create an ICoder Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signupForm">
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" required minlength="6">
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                            <label class="form-check-label" for="termsCheck">I agree to the terms and
+                                conditions</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Info Modal -->
+    <div class="modal fade" id="footerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="footerModalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="footerModalBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Lightbox Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title" id="imageModalTitle"></h5>
+                        <p class="mb-0 small opacity-75" id="imageModalDesc"></p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="imageModalImg" src="" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Success</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ICoder - Heaven for Programmers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">I<span>Coder</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Topics</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-topic="Technology">Technology</a></li>
+                            <li><a class="dropdown-item" href="#" data-topic="Web Development">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#" data-topic="Python">Python</a></li>
+                            <li><a class="dropdown-item" href="#" data-topic="Design">Design</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="contact.html">Support</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Write for Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex me-3" id="searchForm">
+                    <input class="form-control me-2" type="search" id="searchInput" placeholder="Search articles..."
+                        aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+
+                <div class="d-flex gap-2">
+                    <button class="btn btn-nav-login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-nav-signup" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                        Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538a43f?w=1400&h=500&fit=crop"
+                    class="d-block w-100" alt="Coding workspace">
+                <div class="carousel-caption">
+                    <h1>Welcome to ICoder</h1>
+                    <p>Technology News, Development Tutorials &amp; Industry Trends</p>
+                    <button class="btn btn-danger hero-btn" data-filter="technology">Technology</button>
+                    <button class="btn btn-primary hero-btn" data-filter="web development">Web Development</button>
+                    <button class="btn btn-success hero-btn" data-filter="all">View All</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1400&h=500&fit=crop"
+                    class="d-block w-100" alt="Web development">
+                <div class="carousel-caption">
+                    <h1>Learn. Build. Grow.</h1>
+                    <p>Master programming skills with our expert tutorials and guides</p>
+                    <button class="btn btn-danger hero-btn" data-filter="python">Python</button>
+                    <button class="btn btn-primary hero-btn" data-filter="frontend">Frontend</button>
+                    <button class="btn btn-success hero-btn" data-filter="design">Design</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&h=500&fit=crop"
+                    class="d-block w-100" alt="Team collaboration">
+                <div class="carousel-caption">
+                    <h1>Join Our Community</h1>
+                    <p>Connect with developers worldwide and accelerate your career</p>
+                    <a href="about.html" class="btn btn-light hero-btn">About Us</a>
+                    <a href="contact.html" class="btn btn-warning hero-btn">Get in Touch</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1400&h=500&fit=crop"
+                    class="d-block w-100" alt="Developers at work">
+                <div class="carousel-caption">
+                    <h1>Start Your Internship Journey</h1>
+                    <p>Real projects, expert mentorship, and career-ready skills</p>
+                    <a href="about.html" class="btn btn-info hero-btn text-white">Our Story</a>
+                    <a href="contact.html" class="btn btn-light hero-btn">Apply Now</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Tutorials Published</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                    <div class="stat-item">
+                        <h3>50K+</h3>
+                        <p>Active Readers</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <h3>100+</h3>
+                        <p>Expert Authors</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Community Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Topics Showcase -->
+    <section class="container my-5">
+        <div class="text-center">
+            <h2 class="section-title">Popular Topics</h2>
+            <p class="section-subtitle">Explore our most loved learning categories</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="card showcase-card">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=300&fit=crop"
+                        alt="JavaScript programming">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">JavaScript</h6>
+                        <button class="btn btn-sm btn-outline-primary" data-filter="frontend">Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card showcase-card">
+                    <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600&h=300&fit=crop"
+                        alt="Python programming">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">Python</h6>
+                        <button class="btn btn-sm btn-outline-danger" data-filter="python">Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card showcase-card">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=300&fit=crop"
+                        alt="Artificial Intelligence">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">AI &amp; ML</h6>
+                        <button class="btn btn-sm btn-outline-info" data-filter="technology">Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card showcase-card">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=300&fit=crop"
+                        alt="UI UX Design">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">UI/UX Design</h6>
+                        <button class="btn btn-sm btn-outline-success" data-filter="design">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="container my-5" id="blog-section">
+        <div class="text-center">
+            <h2 class="section-title">Latest Articles</h2>
+            <p class="section-subtitle">Explore trending topics in technology and programming</p>
+        </div>
+
+        <div class="row g-4" id="blogGrid">
+            <div class="col-md-6 col-lg-4 blog-card-wrapper" data-category="world">
+                <div class="card blog-card">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=300&fit=crop"
+                        class="card-img-top" alt="Global Conference">
+                    <div class="card-body">
+                        <span class="category-badge bg-primary text-white">World</span>
+                        <h5 class="card-title mt-2">
+                            <a href="#" data-article="conference">Global Tech Conference 2025</a>
+                        </h5>
+                        <p class="text-muted small">Nov 12, 2025</p>
+                        <p class="card-text">Join developers from around the world at the biggest tech event of the
+                            year.</p>
+                        <a href="#" class="read-more-btn" data-article="conference">Continue reading &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 blog-card-wrapper" data-category="design">
+                <div class="card blog-card">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=300&fit=crop"
+                        class="card-img-top" alt="UI Design">
+                    <div class="card-body">
+                        <span class="category-badge bg-success text-white">Design</span>
+                        <h5 class="card-title mt-2">
+                            <a href="#" data-article="design">Learn UI/UX Designing</a>
+                        </h5>
+                        <p class="text-muted small">Nov 11, 2025</p>
+                        <p class="card-text">Master the art of creating beautiful and user-friendly interfaces.</p>
+                        <a href="#" class="read-more-btn" data-article="design">Continue reading &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 blog-card-wrapper" data-category="python">
+                <div class="card blog-card">
+                    <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600&h=300&fit=crop"
+                        class="card-img-top" alt="Python code">
+                    <div class="card-body">
+                        <span class="category-badge bg-danger text-white">Python</span>
+                        <h5 class="card-title mt-2">
+                            <a href="#" data-article="python">Learn Python Programming</a>
+                        </h5>
+                        <p class="text-muted small">Nov 10, 2025</p>
+                        <p class="card-text">Start your journey with Python — from basics to advanced projects.</p>
+                        <a href="#" class="read-more-btn" data-article="python">Continue reading &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 blog-card-wrapper" data-category="frontend">
+                <div class="card blog-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop"
+                        class="card-img-top" alt="Bootstrap">
+                    <div class="card-body">
+                        <span class="category-badge bg-warning text-dark">Frontend</span>
+                        <h5 class="card-title mt-2">
+                            <a href="#" data-article="bootstrap">Bootstrap Templates Guide</a>
+                        </h5>
+                        <p class="text-muted small">Nov 9, 2025</p>
+                        <p class="card-text">Build responsive websites quickly with Bootstrap 5 components.</p>
+                        <a href="#" class="read-more-btn" data-article="bootstrap">Continue reading &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 blog-card-wrapper" data-category="technology">
+                <div class="card blog-card">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=300&fit=crop"
+                        class="card-img-top" alt="Artificial Intelligence">
+                    <div class="card-body">
+                        <span class="category-badge bg-info text-white">Technology</span>
+                        <h5 class="card-title mt-2">
+                            <a href="#" data-article="ai">Introduction to AI</a>
+                        </h5>
+                        <p class="text-muted small">Nov 8, 2025</p>
+                        <p class="card-text">Understand artificial intelligence and its real-world applications.</p>
+                        <a href="#" class="read-more-btn" data-article="ai">Continue reading &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 blog-card-wrapper" data-category="web development">
+                <div class="card blog-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=300&fit=crop"
+                        class="card-img-top" alt="Web Development">
+                    <div class="card-body">
+                        <span class="category-badge bg-secondary text-white">Web Development</span>
+                        <h5 class="card-title mt-2">
+                            <a href="#" data-article="webdev">Full Stack Development Roadmap</a>
+                        </h5>
+                        <p class="text-muted small">Nov 7, 2025</p>
+                        <p class="card-text">A complete guide to becoming a full stack web developer.</p>
+                        <a href="#" class="read-more-btn" data-article="webdev">Continue reading &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="no-results" id="noResults">
+            <h4>No articles found</h4>
+            <p>Try a different search term or browse all articles.</p>
+            <button class="btn btn-primary" data-filter="all">Show All Articles</button>
+        </div>
+    </section>
+
+    <!-- Community Gallery -->
+    <section class="gallery-section bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Community Highlights</h2>
+                <p class="section-subtitle">Click any image to view — workshops, events and learning sessions</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-card" data-gallery data-gallery-title="Live Coding Session"
+                        data-gallery-desc="Weekly live coding sessions with 200+ participants joining online.">
+                        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=600&h=300&fit=crop"
+                            alt="Live coding session">
+                        <div class="gallery-overlay">
+                            <h6>Live Coding</h6>
+                            <p>Every Saturday at 7 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-card" data-gallery data-gallery-title="Project Showcase"
+                        data-gallery-desc="Students presenting their final internship projects to industry mentors.">
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&h=300&fit=crop"
+                            alt="Project showcase">
+                        <div class="gallery-overlay">
+                            <h6>Project Showcase</h6>
+                            <p>Internship demo day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-card" data-gallery data-gallery-title="Mentorship Program"
+                        data-gallery-desc="One-on-one mentorship connecting students with senior developers.">
+                        <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=600&h=300&fit=crop"
+                            alt="Mentorship program">
+                        <div class="gallery-overlay">
+                            <h6>Mentorship</h6>
+                            <p>1-on-1 guidance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="footer-brand mb-2">I<span>Coder</span></div>
+                    <p>Your go-to platform for programming tutorials, tech news, and developer resources.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="text-white mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="text-white mb-3">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" data-footer-modal="privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-footer-modal="terms">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <p class="mb-0">&copy; 2024–2025 ICoder, Inc. All rights reserved.</p>
+                <a href="#" class="back-to-top">Back to top &uarr;</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to ICoder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                            <div class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Create an ICoder Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signupForm">
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" required
+                                minlength="6">
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                            <label class="form-check-label" for="termsCheck">I agree to the terms and
+                                conditions</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article Modal -->
+    <div class="modal fade" id="articleModal" tabindex="-1" aria-labelledby="articleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="articleModalLabel">
+                        <span id="articleModalCategory" class="badge bg-primary me-2"></span>
+                        <span id="articleModalTitle"></span>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="articleModalImage" src="" alt="" class="article-modal-img">
+                    <p class="text-muted" id="articleModalDate"></p>
+                    <p id="articleModalBody"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Contact Author</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Info Modal -->
+    <div class="modal fade" id="footerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="footerModalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="footerModalBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Lightbox Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title" id="imageModalTitle"></h5>
+                        <p class="mb-0 small opacity-75" id="imageModalDesc"></p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="imageModalImg" src="" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Success</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
